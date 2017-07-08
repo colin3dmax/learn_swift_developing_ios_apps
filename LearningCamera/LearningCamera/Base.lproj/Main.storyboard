@@ -82,7 +82,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Gallery" id="JR0-iU-n7n">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="d1I-jM-Nhy"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="d1I-jM-Nhy">
+                            <connections>
+                                <action selector="didTapEditButton:" destination="BYZ-38-t0r" id="5K8-kv-cog"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HGx-YB-VBu">
                             <connections>
                                 <action selector="didTapTakePhotoButton:" destination="BYZ-38-t0r" id="u2A-7w-AbZ"/>
