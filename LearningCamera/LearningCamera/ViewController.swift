@@ -88,8 +88,8 @@ extension ViewController:UIImagePickerControllerDelegate{
     
     func displayError(error:Error,widthTitle:String){
         switch error {
-        case let error as Error:
-            self.displayErrorWithTitle(title: title, message: error.localizedDescription)
+//        case let error as Error:
+//            self.displayErrorWithTitle(title: title, message: error.localizedDescription)
         case let error as Photo.MyError:
             self.displayErrorWithTitle(title: title, message: error.rawValue)
         default:
